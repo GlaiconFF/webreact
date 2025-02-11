@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Tree Lakes Store - E-commerce React  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Tree Lakes Store**, um projeto de e-commerce desenvolvido com **React, TypeScript, Tailwind CSS e shadcn/ui**. A aplicação permite navegar entre produtos, adicionar itens ao carrinho e visualizar detalhes dos produtos de uma API externa.  
 
-Currently, two official plugins are available:
+##  Tecnologias Utilizadas  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** com Vite
+- **TypeScript**
+- **React Router** para navegação
+- **Tailwind CSS** para estilização
+- **React Context API** para gerenciamento do carrinho 
+- **Fetch API** para consumo de dados externos
 
-## Expanding the ESLint configuration
+## Funcionalidades  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Listagem de produtos consumidos via API  
+Exibição de produtos na página inicial  
+Adição de produtos ao carrinho  
+Exibição do total de itens e valor da compra  
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Clone o Repositório  
+```bash
+git clone https://github.com/GlaiconFF/webreact.git
+cd projectshop
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+npm install
+# ou
+yarn install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+npm run dev
+# ou
+yarn dev
